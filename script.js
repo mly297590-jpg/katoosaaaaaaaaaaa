@@ -75,13 +75,16 @@ function displayCatHeart() {
         imageContainer.appendChild(catHeartImage);
         // Hide the options container
         document.getElementById('options').style.display = 'none';
-    };
-}
-const yesAudio = new Audio('yes-sound.m4a');
+ function yesAudio = new Audio('yes-sound.m4a'){
+audio.loop = true;
+audio.play();
 yesAudio.volume = 0.7; // optional
+}
+
 
 
 
 
 // Display the cat.gif initially
 displayCat();
+
